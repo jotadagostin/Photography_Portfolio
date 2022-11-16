@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dosis&family=Inter:wght@100&family=Oswald:wght@200&family=Pacifico&family=Poor+Story&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: white;
+    --common-fontfamily: 'Dosis', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------- Nav bar code start from here ----------------  */
+
+nav {
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 0 97px 5px rgb(45, 45, 45);
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.3fr 0.7fr;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+}
+
+.logo img {
+    height: 12rem;
+    width: 25rem;
+    transform: translateY(1rem);
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-btns a {
+    text-decoration: none;
+    color: rgb(181, 180, 180);
+    font-family: var(--common-fontfamily);
+    font-size: 2rem;
+}
+
+.nav-btns a:hover {
+    color: var(--font);
+    text-shadow: 1px 0 3px rgb(227, 227, 227);
+}
+
+/* Mobile Navbar Code */
+
+.mobile-nav-opening-btn {
+    position: absolute;
+    background-color: violet;
+    height: 4rem;
+    width: 4rem;
+}
+
+/* Home Imagem code start from here */

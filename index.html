@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Studio Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <nav id="home">
+        <div class="logo">
+            <img src="/image/logo.png" alt="">
+        </div>
+        <div class="nav-buttons">
+            <ul class="nav-btn">
+                <li class="nav-btns"><a href="#home">Home</a></li>
+                <li class="nav-btns"><a href="#home">About</a></li>
+                <li class="nav-btns"><a href="#home">Work</a></li>
+                <li class="nav-btns"><a href="#home">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-img-section" id="home">
+        <div class="img-leftsection">
+            <div class="tittle"><p><span class="intro-text"></span></p></div>
+            <div class="descp">
+                <p>
+                    Welcome to my website . This is my personal website devloped my Herin bhatt .
+                    In this website your are going to know all about me and my work . so don't forget to explore it.
+                    You can also Check my social media too form the below buttons .  
+                </p>
+            </div>
+            <div class="social-media-icons">
+                <ul class="icons">
+                    <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="icon"><i class="fa-brands fa-facebbok"></i></li>
+                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="icon"><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="img-rightsection">
+            <img src="/image/my-img.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="about-section-top">
+            <div class="about-section-tittle">About Me</div>
+        </div>
+    </div>
+
+    <div class="about-section-bottom">
+        <div class="personal-info  ">
+            <div class="about-infoimg "><img src="image/about-sectionimg.jpg" alt=""></div>
+            <div class="about-info-center-line">
+              <div class="line"></div></div>
+            <div class="about-info-description">
+                <p class="para"> My expertise is in Wildlife phtography , Product photography and Macro photography . I am working in Gir National Park and Wildlife Sanctuary from last <b>15 year</b> . I also have more that <b> 8 year </b> of experince in product photography too . You can check some of my best work by scrolling down </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="work-section">
+    <div class="work-container">
+        <div class="top-work-section" id="work"></div>
+
+        <div class="bottom-work-section">
+            <div class="work-navbar">
+                <ul class="work-nav-ul">
+                    <li class="work-nav-li selected-nav-choice">Wildlife</li>
+                    <li class="work-nav-li">Product</li>
+                    <li class="work-nav-li">Macro</li>
+                </ul>
+            </div>
+
+            <div class="work-images">
+                <div class="work-img-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-us-section" id="contact">
+
+    <div class="contact-lower-section">
+        <div class="contact-img-section"><img src="/image/my-img.jpg" alt=""></div>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="email" placeholder="your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <textarea name="subject" id="subject" style="height: 200px;" rows="20" placeholder="write Message"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="return-btn"><a href="#home"><button class="return-button-to-home"><i class="fa-solid fa-arrow-up"></i></button></a></div>
+
+<script src="js/animation.js"></script>
+<script src="js/style.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    let introtext = document.querySelector(".intro-text")
+
+    // Intro txt animation---------
+    window.addEventListener("load", () =>{
+        var typed = new Typed('.intro-text', {
+            strings:['HI, I AM Jonny'],
+            typeSpeed: 70,
+            // backspeed:20,
+            loop:false
+        });
+    })
+
+</script>
+
+
+</body>
+
+
+</html>
