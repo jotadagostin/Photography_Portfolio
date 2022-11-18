@@ -4,32 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Studio Photography</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/mobile-elementcode.css">
+    <link rel="stylesheet" href="css/extra-elements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <nav id="home">
-        <div class="logo">
-            <img src="/image/logo.png" alt="">
-        </div>
-        <div class="nav-buttons">
-            <ul class="nav-btn">
-                <li class="nav-btns"><a href="#home">Home</a></li>
-                <li class="nav-btns"><a href="#home">About</a></li>
-                <li class="nav-btns"><a href="#home">Work</a></li>
-                <li class="nav-btns"><a href="#home">Contact Us</a></li>
-            </ul>
-        </div>
+   <nav id="home">
+      <div class="logo"><img src="image/logo.png" alt=""></div>
+      <div class="nav-buttons">
+        <ul class="nav-btn">
+            <li class="nav-btns"><a href="#home"> Home </a></li>
+            <li class="nav-btns"><a href="#about"> About </a></li>
+            <li class="nav-btns"><a href="#work"> Work </a></li>
+            <li class="nav-btns"><a href="#contact"> Contact Us </a></li>
+        </ul>
+      </div>
     </nav>
-
-    
-
-    <div class="about-section" id="about">
-        <div class="about-section-top">
-            <div class="about-section-tittle">About Me</div>
-        </div>
-    </div>
 
     <div class="main-img-section" id="home">
         <div class="img-leftsection">
@@ -74,84 +67,98 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
-<div class="work-section">
-    <div class="work-container">
-        <div class="top-work-section" id="work"></div>
+    <div class="work-section" >
+        <div class="work-container" >
+            <div class="top-work-section" id="work">Work</div>
 
-        <div class="bottom-work-section">
-            <div class="work-navbar">
-                <ul class="work-nav-ul">
-                    <li class="work-nav-li selected-nav-choice">Wildlife</li>
-                    <li class="work-nav-li">Product</li>
-                    <li class="work-nav-li">Macro</li>
-                </ul>
-            </div>
+            <div class="bottom-work-section">
+                <div class="work-navbar">
+                    <ul class="work-nav-ul">
+                        <li class="work-nav-li selected-nav-choice">WildLife</li>
+                        <li class="work-nav-li ">Product</li>
+                        <li class="work-nav-li ">Macro</li>
+                    </ul>
+                </div>
 
-            <div class="work-images">
-                <div class="work-img-container">
-
+                <div class="work-images">
+                    <div class="work-img-container">
+                      
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 <div class="contact-us-section" id="contact">
 
+      <div class="contact-upper-section"><div class="contact-title">Contact</div></div>
+
     <div class="contact-lower-section">
-        <div class="contact-img-section"><img src="/image/my-img.jpg" alt=""></div>
+            
+      <div class="conatact-img-section"><img src="image/my-img.jpg" alt=""></div>
         <div class="container">
-            <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="your name">
-                    </div>
+          <form action="/action_page.php">
+            <div class="row">
+             
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-75">
+                <input type="text" id="lname" name="email" placeholder="Your Email..">
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write Message.." style="height:200px" rows="20"></textarea>
+              </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-75">
+                  <input type="submit" value="Submit">
                 </div>
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="your last name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-75">
-                        <input type="text" id="lname" name="email" placeholder="your email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-75">
-                        <textarea name="subject" id="subject" style="height: 200px;" rows="20" placeholder="write Message"></textarea>
-                    </div>
-                </div>
-            </form>
-        </div>
+            </div>
+          </form>
+          </div>  
     </div>
+
 </div>
 
 <div class="return-btn"><a href="#home"><button class="return-button-to-home"><i class="fa-solid fa-arrow-up"></i></button></a></div>
 
+
+
 <script src="js/animation.js"></script>
 <script src="js/style.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 <script>
-    let introtext = document.querySelector(".intro-text")
 
-    // Intro txt animation---------
-    window.addEventListener("load", () =>{
-        var typed = new Typed('.intro-text', {
-            strings:['HI, I AM Jonny'],
-            typeSpeed: 70,
-            // backspeed:20,
-            loop:false
-        });
-    })
+let introtext=document.querySelector(".intro-text")
+
+// Intro text animation ------------------
+window.addEventListener("load",()=>{
+  var typed = new Typed('.intro-text', {
+  strings:["HI, I am Jonny"],
+  typeSpeed:70,
+  // backSpeed:20,
+  loop:false
+});
+})
 
 </script>
 
-
 </body>
-
-
 </html>

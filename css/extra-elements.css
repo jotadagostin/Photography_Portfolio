@@ -1,0 +1,39 @@
+.return-btn{
+    height: 100vh;
+    width: 10rem;
+    position: fixed;
+   left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 7;
+}
+
+.return-btn a i {
+    color: black;
+    font-size: 3.5rem;
+    display:none;
+}
+
+.return-button-to-home{
+    background-color: transparent;
+    border: none;
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    border-radius: 0%;
+    transform: translateY(0rem) translateX(2rem);
+    transition: all .1s ease-in-out;
+}
+
+@keyframes return {
+    0%{
+        border-radius: 0;
+        transform: translateY(0rem) translateX(2rem);
+    }
+    100%{
+        background-color: white;
+        border-radius: 50%;
+        transform: translateY(65rem) translateX(2rem);
+    }
+}
